@@ -262,6 +262,7 @@ const updateAccountDetails = asyncHandler(async (req, res) => {
     .json(new ApiResponse(200, user, "Account Details Updated Successfully"));
 });
 
+// also make a utility function to delete old avatar/ coverImage using URL
 const updateUserAvatar = asyncHandler(async (req, res) => {
   const avatarlocalPath = req.file?.path;
 
